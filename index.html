@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JS</title>
+</head>
+<body>
+    <p id="testText" class="test-text"></p>
+
+    <!-- untuk id menggunakan camel case, untuk kelas menggunakan tanda strip "-" -->
+    <!-- '' Ini untuk char -->
+    <!-- "" ini untuk string -->
+    <!-- decimal menggunakan float -->
+    <!-- bilangan bulat menggunakan Integer -->
+     <!-- operator dalam javascript
+      == hanya membandingkan value
+      === membandingkan value dan tipe data
+      ! tidak sama
+      != tidak sama dengan
+      && and
+      || or
+      > lebih dari
+      < kurang dari
+      >= lebih dari sama dengan
+      <= kurang dari sama dengan
+       -->
+    <p id="sapaSaya"></p>
+
+    <script>
+        // Inject vaalue terhadap html
+        document.getElementById("testText").innerHTML ="hallo semua";
+        
+        // Inject document suatu vaalue dan html
+        //document.write("<h3>Hallo juga</h3>")
+        // var untuk membuat variabel secara global
+        // var myName = prompt("Sebutkan nama anda")
+        // if(myName != null){
+        //    document.getElementById("sapaSaya").innerHTML = "Hallo"+ myName
+        //}
+        //else if(myName == ""){
+        //    alert("Masukkan nama dulu yuk")
+        //}
+        //else(
+        //    alert("Kenalan dulu yuk")
+        //)
+        document.write("5*5=", 5*5, "<br/>")
+        document.write("5/5=", 5/5, "<br/>")
+        document.write("5+5=", 5+5, "<br/>")
+        document.write("5-5=", 5-5, "<br/>")
+
+        var uang = 12000.50;
+        document.write("Uang saya:", (uang/3).toFixed(2), "<br/>")
+
+        var bilangan = 5;
+        document.write("+bilangan=", ++ bilangan, "<br/>")
+        document.write("-bilangan=", -- bilangan, "<br/>")
+
+        var bilangan1 = 10;
+        var bilangan2 = 20;
+        document.write("Bilangan 1 + bilangan 2 = ", bilangan1+bilangan2, "<br/>")
+        document.write("Tebak hasil 5 + 4 * 2 : ", 5 + (4 * 2), "<br/>")
+        document.write("Tebak hasil (5 + 4) * 2 : ", (5 + 4) * 2, "<br/>")
+
+        var bilanganRound = 5.45;
+        document.write("Math ceil () =", Math.ceil(bilanganRound), "<br/>") //pembulatan keatas
+        document.write("Math floor () =", Math.floor(bilanganRound), "<br/>") //pembulatan kebawah
+        document.write("Math round () =", Math.round(bilanganRound), "<br/>") //pembulatan kebawah
+
+        var stringBuah = "Melon" + "Pisang" + "Jambu";
+        document.write("Jumlah string: ", stringBuah.length, "<br/>") 
+        document.write("Pisang Index ke: ", stringBuah.indexOf("Pisang"), "<br/>")
+        document.write(stringBuah.slice(5,11), "<br/>") //diambil dari urutan tertentu
+        document.write(stringBuah.slice(5), "<br/>") //diambil dari urutan 5 hingga terakhir
+        document.write(stringBuah.substr(11, 5), "<br/>") //diambil dari urutan belakang
+        document.write(stringBuah.replace("Jambu", "Pepaya"), "<br/>") //mengganti string
+        document.write(stringBuah.split(" ")); //merubah data string kedalam bentuk array
+        console.log(stringBuah.split(" ")); //merubah data string kedalam bentuk array
+
+        var arrString = stringBuah.split(""); //merubah data string kedalam bentuk array
+        console.log(arrString[3]);
+        console.log(arrString[3].toUpperCase());
+        console.log(arrString[3].toLowerCase());
+
+        var strStyle = "Rosa Noviasari";
+        document.write("<br><br/>")
+        document.write("Text bold : ", strStyle.bold(),"<br/>")
+        document.write("Text italics : ", strStyle.italics(),"<br/>")
+        document.write("Text strike : ", strStyle.strike(),"<br/>")
+        document.write("Text besar : ", strStyle.fontsize("12"),"<br/>")
+        document.write("Text sub : ", strStyle.sub(),"<br/>")
+        document.write("Text sup : ", strStyle.sup(),"<br/>")
+
+        var umur = 20
+        if((umur >= 5) && (umur < 8)){
+            document.write("Anak-anak", "<br/>")
+        } else if (umur > 18 ){
+            document.write("Dewasa", "<br/>")
+        } else{
+            document.write("Remaja", "<br/>")
+        }
+    </script>
+</body>
+</html>
