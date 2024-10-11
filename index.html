@@ -25,8 +25,8 @@
       >= lebih dari sama dengan
       <= kurang dari sama dengan
        -->
-    <p id="sapaSaya"></p>
-
+     <!-- <p id="sapaSaya"></p> -->
+        <p id="output"></p>
     <script>
         // Inject vaalue terhadap html
         document.getElementById("testText").innerHTML ="hallo semua";
@@ -44,61 +44,110 @@
         //else(
         //    alert("Kenalan dulu yuk")
         //)
-        document.write("5*5=", 5*5, "<br/>")
-        document.write("5/5=", 5/5, "<br/>")
-        document.write("5+5=", 5+5, "<br/>")
-        document.write("5-5=", 5-5, "<br/>")
+        // document.write("5*5=", 5*5, "<br/>")
+        // document.write("5/5=", 5/5, "<br/>")
+        // document.write("5+5=", 5+5, "<br/>")
+        // document.write("5-5=", 5-5, "<br/>")
 
-        var uang = 12000.50;
-        document.write("Uang saya:", (uang/3).toFixed(2), "<br/>")
+        // var uang = 12000.50;
+        // document.write("Uang saya:", (uang/3).toFixed(2), "<br/>")
 
-        var bilangan = 5;
-        document.write("+bilangan=", ++ bilangan, "<br/>")
-        document.write("-bilangan=", -- bilangan, "<br/>")
+        // var bilangan = 5;
+        // document.write("+bilangan=", ++ bilangan, "<br/>")
+        // document.write("-bilangan=", -- bilangan, "<br/>")
 
-        var bilangan1 = 10;
-        var bilangan2 = 20;
-        document.write("Bilangan 1 + bilangan 2 = ", bilangan1+bilangan2, "<br/>")
-        document.write("Tebak hasil 5 + 4 * 2 : ", 5 + (4 * 2), "<br/>")
-        document.write("Tebak hasil (5 + 4) * 2 : ", (5 + 4) * 2, "<br/>")
+        // var bilangan1 = 10;
+        // var bilangan2 = 20;
+        // document.write("Bilangan 1 + bilangan 2 = ", bilangan1+bilangan2, "<br/>")
+        // document.write("Tebak hasil 5 + 4 * 2 : ", 5 + (4 * 2), "<br/>")
+        // document.write("Tebak hasil (5 + 4) * 2 : ", (5 + 4) * 2, "<br/>")
 
-        var bilanganRound = 5.45;
-        document.write("Math ceil () =", Math.ceil(bilanganRound), "<br/>") //pembulatan keatas
-        document.write("Math floor () =", Math.floor(bilanganRound), "<br/>") //pembulatan kebawah
-        document.write("Math round () =", Math.round(bilanganRound), "<br/>") //pembulatan kebawah
+        // var bilanganRound = 5.45;
+        // document.write("Math ceil () =", Math.ceil(bilanganRound), "<br/>") //pembulatan keatas
+        // document.write("Math floor () =", Math.floor(bilanganRound), "<br/>") //pembulatan kebawah
+        // document.write("Math round () =", Math.round(bilanganRound), "<br/>") //pembulatan kebawah
 
-        var stringBuah = "Melon" + "Pisang" + "Jambu";
-        document.write("Jumlah string: ", stringBuah.length, "<br/>") 
-        document.write("Pisang Index ke: ", stringBuah.indexOf("Pisang"), "<br/>")
-        document.write(stringBuah.slice(5,11), "<br/>") //diambil dari urutan tertentu
-        document.write(stringBuah.slice(5), "<br/>") //diambil dari urutan 5 hingga terakhir
-        document.write(stringBuah.substr(11, 5), "<br/>") //diambil dari urutan belakang
-        document.write(stringBuah.replace("Jambu", "Pepaya"), "<br/>") //mengganti string
-        document.write(stringBuah.split(" ")); //merubah data string kedalam bentuk array
-        console.log(stringBuah.split(" ")); //merubah data string kedalam bentuk array
+        // var stringBuah = "Melon" + "Pisang" + "Jambu";
+        // document.write("Jumlah string: ", stringBuah.length, "<br/>") 
+        // document.write("Pisang Index ke: ", stringBuah.indexOf("Pisang"), "<br/>")
+        // document.write(stringBuah.slice(5,11), "<br/>") //diambil dari urutan tertentu
+        // document.write(stringBuah.slice(5), "<br/>") //diambil dari urutan 5 hingga terakhir
+        // document.write(stringBuah.substr(11, 5), "<br/>") //diambil dari urutan belakang
+        // document.write(stringBuah.replace("Jambu", "Pepaya"), "<br/>") //mengganti string
+        // document.write(stringBuah.split(" ")); //merubah data string kedalam bentuk array
+        // console.log(stringBuah.split(" ")); //merubah data string kedalam bentuk array
 
-        var arrString = stringBuah.split(""); //merubah data string kedalam bentuk array
-        console.log(arrString[3]);
-        console.log(arrString[3].toUpperCase());
-        console.log(arrString[3].toLowerCase());
+        // var arrString = stringBuah.split(""); //merubah data string kedalam bentuk array
+        // console.log(arrString[3]);
+        // console.log(arrString[3].toUpperCase());
+        // console.log(arrString[3].toLowerCase());
 
-        var strStyle = "Rosa Noviasari";
-        document.write("<br><br/>")
-        document.write("Text bold : ", strStyle.bold(),"<br/>")
-        document.write("Text italics : ", strStyle.italics(),"<br/>")
-        document.write("Text strike : ", strStyle.strike(),"<br/>")
-        document.write("Text besar : ", strStyle.fontsize("12"),"<br/>")
-        document.write("Text sub : ", strStyle.sub(),"<br/>")
-        document.write("Text sup : ", strStyle.sup(),"<br/>")
+        // var strStyle = "Rosa Noviasari";
+        // document.write("<br><br/>")
+        // document.write("Text bold : ", strStyle.bold(),"<br/>")
+        // document.write("Text italics : ", strStyle.italics(),"<br/>")
+        // document.write("Text strike : ", strStyle.strike(),"<br/>")
+        // document.write("Text besar : ", strStyle.fontsize("12"),"<br/>")
+        // document.write("Text sub : ", strStyle.sub(),"<br/>")
+        // document.write("Text sup : ", strStyle.sup(),"<br/>")
 
-        var umur = 20
-        if((umur >= 5) && (umur < 8)){
-            document.write("Anak-anak", "<br/>")
-        } else if (umur > 18 ){
-            document.write("Dewasa", "<br/>")
-        } else{
-            document.write("Remaja", "<br/>")
+        // var umur = 1
+        // if((umur >=0) && (umur < 8)){
+        //     document.write("Anak-anak", "<br/>")
+        // } else if (umur > 18 ){
+        //     document.write("Dewasa", "<br/>")
+        // } else{
+        //     document.write("Remaja", "<br/>")
+        // }
+        
+        //boolean (true dan false)
+        document.write("True : ", true, "<br/>")
+        document.write("False : ", false, "<br/>")
+
+        var bilanganBoolean = 5;
+        document.write("\"5\"==5", ("5" == 5), "<br/>")  //membandingkan value
+        document.write("\"5\"===5", ("5" === 5), "<br/>")  //membandingkan tipe data
+
+        // (kondisi) iftrue : iffalse
+
+        var cekKhodam = (bilanganBoolean>=10) ? "Oyen Marah" : "Oyen Tantrum"; 
+        document.write("cek khodam= ", cekKhodam, "<br/>")
+
+        // var i = 1;
+        // while(i<=10){
+        // document.getElementById("output").innerHTML += i + "<br/>";
+        // }
+
+        // do{
+        //     document.getElementById("output").innerHTML += "Mulai";
+        //     document.getElementById("output").innerHTML += i + "<br/>";
+        //     i++;
+        // } while(i<=10) {
+        //     document.getElementById("output").innerHTML += "Akhir";
+        // }
+
+        for(i=0; i<=20; i++){
+            if(i === 12){
+            continue;
+            }
+            if (i === 15){
+            break;
+            }
+            document.getElementById("output").innerHTML += i + "<br/>"
         }
+        
+        var myData = ["Rosa Noviasari", "Bandung", "10000"]; //array
+        myData[3] = "rosanovia11@gmail.com";
+        document.write("Cek index ke 0: ", myData [0], "<br/>")
+        document.write("Cek index ke 0: ", myData [1], "<br/>")
+        document.write("Cek index ke 0: ", myData [2], "<br/>")
+        document.write("Cek index ke 0: ", myData [3], "<br/>")
+        document.write(myData.join (" "), "<br/>")
+
+        var nilai = [4, 6, 8, 12, 34, 29, 22, 1, 6];
+        nilai.sort(function(x,y){return x - y});
+
+        document.write("Nilai array: ", nilai.toString(), "<br/>")
     </script>
 </body>
 </html>
