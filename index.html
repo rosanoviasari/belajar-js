@@ -148,6 +148,31 @@
         nilai.sort(function(x,y){return x - y});
 
         document.write("Nilai array: ", nilai.toString(), "<br/>")
+
+        document.write("<br/>============================================================================================================<br/>")
+
+        // function dikalikan(param1){
+        //     var variabel = 2;
+        //     return param1*variabel;
+        // }
+
+        // function kalifungsi(func1, param2){
+        //     return func1(param2);
+        // }
+
+        // document.write("5*2 = ", kalifungsi(dikalikan, 5), "<br/>")
+
+        function kaliArray(paramArray1){
+            var returnArray = [];
+
+            for(i=0; i<paramArray1.length; i++){
+                returnArray.push(paramArray1[i]*2);
+            }
+            return returnArray
+        }
+
+        document.write("Kalikan array jadi 2 [1,2,3,4,5] = ", kaliArray([1,2,3,4,5]).toString(), "<br/>");
+
     </script>
 </body>
 </html>
