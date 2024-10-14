@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="tampilkanDataAssosiatif()">Tampilkan</button>
+    <div id="containerSinglePerson">
+
+    </div>
+    <script>
+
+        var dataMahasiswaKelas= [
+            ['Rosa N', 24, 'Bandung'],
+            ['Riska M', 27, 'Bandung'],
+            ['Dian P', 27, 'Bandung'],
+            ['Nida K', 29, 'Bandung'],
+            ] // assosiatif array (nested array)
+
+        function tampilkanDataAssosiatif(){
+            var appendElm = dataMahasiswaKelas.map(row=> `<ul>
+                 <li> Nama: ${row[0]}</li>      
+                 <li> Umur: ${row[1]}</li>
+                 <li> Kota: ${row[2]}</li>
+             </ul>`).join('');
+             var containerElm = document.getElementById('containerSinglePerson');
+            containerElm.innerHTML = appendElm
+        }
+        // ${} digunakan untuk mempermudah kode array sehingga dapat dibuat paralel tidak harus linier
+        
+        // function tampilkanData(){
+            // var appendElm = `<ul>
+            //     <li> Nama: ${dataMahasiswa[0]}</li> 
+            //     <li> Umur: ${dataMahasiswa[1]}</li>
+            //     <li> Kota: ${dataMahasiswa[2]}</li>
+            // </ul>`;
+            // var containerElm = document.getElementById('containerSinglePerson');
+            // containerElm.innerHTML = appendElm;  // akan menimpa data sebelumnya dengan request data baru
+
+            // var ulElm = document.createElement("ul");
+
+            // var liElm1 = document.createElement("li");
+            // liElm1.innerHTML = "Nama: " + dataMahasiswa[0];
+
+            // var liElm2 = document.createElement("li");
+            // liElm2.innerHTML = "Umur: " + dataMahasiswa[1];
+
+            // var liElm3 = document.createElement("li");
+            // liElm3.innerHTML = "Kota: " + dataMahasiswa[2];
+
+            // ulElm.appendChild(liElm1);
+            // ulElm.appendChild(liElm2);
+            // ulElm.appendChild(liElm3);
+            
+            // var containerElm = document.getElementById('containerSinglePerson');
+            // containerElm.appendChild(ulElm);  //akan mengeluarkan data secara terus menerus hingga ke bawah
+        // }
+
+
+    </script>
+</body>
+</html>

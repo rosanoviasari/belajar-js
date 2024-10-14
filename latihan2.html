@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 2</title>
+</head>
+<body>
+    <a href="javascript:void(0)"
+    onclick="openAlert('Hello world')"
+    onmouseover="this.style.color='red'"
+    onmouseout="this.style.color='black'"
+    onmousedown="this.text='Jangan click'"
+    onmouseup="this.text='Makasih'">Click saya</a>
+    <br>
+    <br>
+
+    <input type="text" id="txtJumlah" placeholder="Masukkan Nilai">
+    <input type="text" id="txtKali" placeholder="Masukkan Nilai">
+    <button type="button" onclick="kali2()"> Kalikan 2 </button>
+    <br>
+    <h3 id="hasil"></h3>
+    <script>
+        function openAlert(param1){
+            alert(param1);
+        }
+
+        function kali2(){
+            var komponenJumlah = document.getElementById('txtJumlah');
+            var komponenKali = document.getElementById('txtKali');
+            
+            var isiKomponenJumlah = komponenJumlah.value;
+            var isiKomponenKali = komponenKali.value;            
+            var hasilKali = isiKomponenJumlah*isiKomponenKali;
+
+            document.getElementById('hasil').innerHTML = "Hasilnya adalah : " + (hasilKali);
+        }
+    </script>
+</body>
+</html>
